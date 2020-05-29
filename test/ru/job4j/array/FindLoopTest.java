@@ -17,9 +17,9 @@ public class FindLoopTest {
     }
 
     @Test
-    public void whenArrayHasMinus3ThenMinus1() {
+    public void whenArrayHasNoValueThenMinus1() {
         FindLoop find = new FindLoop();
-        int[] input = new int[]{-3, 4, 15};
+        int[] input = new int[]{-2, 4, 15};
         int value = -3;
         int result = find.indexOf(input, value);
         int expect = -1;
