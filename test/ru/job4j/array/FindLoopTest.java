@@ -37,7 +37,7 @@ public class FindLoopTest {
         assertThat(result, is(expect));
     }
     @Test
-    public void whenNotFind3() {
+    public void whenNotFind1() {
         int[] input = new int[] {5, 2, 10, 2, 4};
         int value = 1;
         int start = 2;
