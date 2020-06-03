@@ -80,9 +80,9 @@ public class MatrixCheckTest {
         char[][] input = {
                 {' ', ' ', 'X', ' ', ' '},
                 {' ', ' ', 'X', ' ', ' '},
-                {' ', 'X', ' ', ' ', ' '},
                 {' ', ' ', 'X', ' ', ' '},
                 {' ', ' ', 'X', ' ', ' '},
+                {' ', ' ', ' ', 'X', ' '},
         };
         boolean result = MatrixCheck.isWin(input);
         assertThat(result, is(false));
