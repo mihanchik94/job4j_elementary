@@ -2,11 +2,17 @@ package ru.job4j.loop;
 
 
     public class Slash {
+        /**
+         * С помощью массивов рисуются крестики (иксы). Габариты крестиков зависят от переменной size.
+         * @param size - число, определяющее количество элементов по диагонали.
+         * boolean left = row == cell - условие, по которому нужно определить ставить ли символ в левый угол.
+         * boolean right = (row + cell) == size - 1 - условие, что нужно ставить элемент в правый угол.
+         */
         public static void draw(int size) {
             for (int row = 0; row < size; row++) {
                 for (int cell = 0; cell < size; cell++) {
-                    boolean left = row == cell; // добавить условие, по которому нужно определить ставить ли символ или нет.
-                    boolean right = (row + cell) == size - 1; // добавить условие, что нужно ставить элемент в правый угол.
+                    boolean left = row == cell;
+                    boolean right = (row + cell) == size - 1;
                     if (left) {
                         System.out.print("0");
                     } else if (right) {
