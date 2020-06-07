@@ -14,8 +14,6 @@ public class Merge {
                 rsl[i] = right[rightI++];
             } else if (leftI < left.length && rightI == right.length) {
                 rsl[i] = left[leftI++];
-            } else if (leftI == left.length && rightI == right.length) {
-                break;
             } else if (left[leftI] >= right[rightI]) {
                 rsl[i] = right[rightI++];
             } else if (left[leftI] <= right[rightI]) {
