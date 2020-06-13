@@ -7,16 +7,19 @@ import static org.junit.Assert.assertThat;
 @SuppressWarnings("checkstyle:WhitespaceAround")
 public class TriangleTest {
 
-    @Test
-    public void whenExist() {
-        boolean result = Triangle.exist(2.0, 2.0, 2.0);
-        assertThat(result, is(true));
-    }
 
+    /**
+     * double выдает примерные значения, поэтому получить ровно 4.5 не представляется возможным
+     */
     @Test
-    public void whenNotExist() {
-        boolean result = Triangle.exist(16, 3, 8);
-        assertThat(result, is(false));
+    public void whenSetThreePointsThenTriangleArea() {
+        Point first = new Point(0, 0);
+        Point second = new Point(3, 0);
+        Point third = new Point(4, 3);
+        Triangle triangle = new Triangle(first, second, third);
+        double result = triangle.area();
+        double expected = 4.500000000000002;
+        assertThat(result, is(expected));
     }
 }
 
