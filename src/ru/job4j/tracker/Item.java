@@ -1,12 +1,19 @@
 package ru.job4j.tracker;
 
 public class Item {
+    private String id;
+    private String name;
+
     public Item() {
-        super();
-        System.out.println("load item");
     }
 
-    public static void main(String[] args) {
-        Bug bug = new Bug();
+    public Item(String id) {
     }
+
+    public Item(String name) {
+    }
+
+    public Item(String id, String name) {
+    }
+
 }
