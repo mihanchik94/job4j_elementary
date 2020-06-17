@@ -1,3 +1,4 @@
+/*
 package ru.job4j.profession;
 
 public class Profession {
@@ -26,3 +27,4 @@ public class Profession {
     public int getSalary() {
     }
 }
+*/

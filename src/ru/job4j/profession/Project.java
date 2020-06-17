@@ -1,3 +1,4 @@
+/*
 package ru.job4j.profession;
 
 public class Project {
@@ -18,3 +19,4 @@ public class Project {
     public String getFinishDate() {
     }
 }
+*/

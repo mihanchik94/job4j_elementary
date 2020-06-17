@@ -1,3 +1,4 @@
+/*
 package ru.job4j.profession;
 
 public class Programmer extends Engineer {
@@ -9,3 +10,4 @@ public class Programmer extends Engineer {
     public void createProgram() {
     }
 }
+*/

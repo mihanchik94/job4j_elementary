@@ -1,3 +1,4 @@
+/*
 package ru.job4j.profession;
 
 public class Patient {
@@ -18,3 +19,4 @@ public class Patient {
     public long getPolicy() {
     }
 }
+*/
